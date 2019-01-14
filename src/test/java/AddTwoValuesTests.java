@@ -28,6 +28,36 @@ public class AddTwoValuesTests {
         assertEquals("-10 + -5 must be -15", -15, calc.add(-10, -5));
     }
 
+
+
+
+
+
+    @Test
+    public void testAddTwoNegativeValues1() {
+        assertEquals("-10 + -5 must be -15", -15, calc.add(-10, -5));
+    }
+    @Test
+    public void testAddTwoNegativeValues2() {
+        assertEquals("-10 + -5 must be -15", -15, calc.add(-10, -5));
+    }
+    @Test
+    public void testAddTwoNegativeValues3() {
+        assertEquals("-10 + -5 must be -15", -15, calc.add(-10, -5));
+    }
+    @Test
+    public void testAddTwoNegativeValues4() {
+        assertEquals("-10 + -5 must be -15", -15, calc.add(-10, -5));
+    }
+    @Test
+    public void testAddTwoNegativeValues5() {
+        assertEquals("-10 + -5 must be -15", -15, calc.add(-10, -5));
+    }
+    @Test
+    public void testAddTwoNegativeValues6() {
+        assertEquals("-10 + -5 must be -15", -15, calc.add(-10, -5));
+    }
+
     //TODO
     //add new tests for add() method
 
