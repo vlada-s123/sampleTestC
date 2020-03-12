@@ -56,7 +56,7 @@ public class AddTwoValuesTests {
 
         @Test
         public void testPow() {
-            int a = 2;
+            int a =2;
             int b = 6;
             double exp = 64;
             assertEquals(String.format("%s ^ %s must be %s",a, b, exp), exp, calc.pow(a, b));
