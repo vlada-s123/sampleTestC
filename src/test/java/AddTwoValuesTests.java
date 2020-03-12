@@ -73,6 +73,7 @@ public class AddTwoValuesTests {
             int a = -5;
             int b = -2;
             assertTrue(String.format("%s  must be NaN",a), Double.isNaN(calc.squareRootA(a)));
+
             assertTrue(String.format("%s  must be NaN",a), Double.isNaN(calc.squareRootB(b)));
         }
 
