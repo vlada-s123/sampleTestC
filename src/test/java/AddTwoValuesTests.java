@@ -3,6 +3,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
+import static junit.framework.TestCase.assertTrue;
 
 /**
  * Created by kate on 1/12/16.
@@ -56,25 +57,25 @@ public class AddTwoValuesTests {
 
         @Test
         public void testPow() {
-            int a =2;
+            int a = 2;
             int b = 6;
             double exp = 64;
             assertEquals(String.format("%s ^ %s must be %s",a, b, exp), exp, calc.pow(a, b));
         }
-       /* @Test
+        @Test
         public void testZero() {
-            try {
                 int a = 5;
                 int b = 0;
-                int exp = int.POSITIVE_INFINITY;
-                assertEquals(String.format("%s / %s must be %s",a, b, exp), exp, calc.division(a, b));
-            } catch (Exception e) {
-                System.out.print("На ноль делить нельзя!");
-            }
-        }*/
+                assertTrue(String.format("%s / %s must be infinity",a, b ), Double.isInfinite(calc.division(a, b)));
+    }
+        @Test
+        public void testSqrRootMin() {
+            int a = -5;
+            int b = -2;
+            assertTrue(String.format("%s  must be NaN",a), Double.isNaN(calc.squareRootA(a)));
+            assertTrue(String.format("%s  must be NaN",a), Double.isNaN(calc.squareRootB(b)));
+        }
 
-    //TODO
-    //add tests for new methods
 
     @After
     public void consolePrintAfter() {
